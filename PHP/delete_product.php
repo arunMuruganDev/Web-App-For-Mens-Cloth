@@ -1,0 +1,36 @@
+<?php
+
+session_start();
+
+include "db.php";
+
+$_SESSION['previous_page'] = $_SERVER['HTTP_REFERER'];
+
+if (isset($_SESSION['previous_page'])) {
+    $previousPage = $_SESSION['previous_page'];
+    unset($_SESSION['previous_page']);
+  
+}
+
+if(isset($_SESSION['cid']))
+{
+
+$pid = $_GET['pid'];
+
+$sql = "DELETE FROM products WHERE pid = $pid";
+if($conn->query($sql)===TRUE)
+{
+    echo "<script>alert('Product Deleted')
+    window.location.href='".$previousPage."'
+    </script>";
+}
+
+
+}
+else{
+    header("location:../login.html");
+}
+
+
+
+?>

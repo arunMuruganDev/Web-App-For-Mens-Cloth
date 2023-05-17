@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    outline:none;
+}
+:root{
+	--bg-color: #ffffff;
+	--text-color: #111111;
+	--main-color: #38d39f;
+	--big-font: 4.5rem;
+	--h2-font: 3.3rem;
+	--h3-font: 2rem;
+	--normal-font: 1rem;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container .left-section{
+
+    height:100%;
+    width:20%;
+    background-color:#e649c9;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    position:fixed;
+    top:0;
+}
+.container .left-section h1{
+    position: fixed;
+    top: 20px;
+    left: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:white;
+
+}
+.container .left-section .price-range
+{
+    position:fixed;
+    top: 100px;
+    left: 30px;
+}
+.container .left-section .price-range h2{
+    letter-spacing: 1px;
+}
+.container .left-section .price-range form .price{
+
+    margin: 20px 0;
+}
+
+
+.container .right-section{
+    height:100%;
+    width: 80%;
+    margin-left:20%;
+    transition: 0.4s;
+}
+.container .right-section nav{
+    width: 100%;
+    height: 10%;
+    background-color: var(--bg-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 10px 15px -3px, rgba(0, 0, 0, 0.05) 0px 4px 6px -2px;
+    position: sticky;
+    top: 0;
+}
+
+.container .right-section nav .nav-links{
+    position: fixed;
+    right: 20px;
+   
+
+}
+.container .right-section nav .nav-links a i{
+    font-size: 30px;
+    color: #e649c9;
+    margin-right: 20px;
+ 
+}
+.container .right-section nav form input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    border:none;
+    background-color: #e649c9;
+    color: white;
+    cursor: pointer;
+}
+.container .right-section form select{
+
+   width: 200px;
+   height: 30px;
+   border: none;
+   border-bottom: 2px solid rgb(104, 203, 216);
+
+}
+.container .right-section .products
+{
+    height: 100%;
+    width: 100%;
+    padding:20px 30px;
+    display: flex;
+    flex-wrap: wrap;
+}
+.container .right-section .products .product{
+    width: 330px;
+    height: 450px;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    padding: 20px;
+    margin: 20px 20px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 10px;
+}
+.container .right-section .products .product img{
+    width: 100%;
+    height: 200px;
+}
+.container .right-section .products .product h2{
+   margin-top: 10px;
+}
+.container .right-section .products .product span{
+    margin-top: 10px;
+}
+.container .right-section .products .product #danger{
+   color: tomato;
+}
+.container .right-section .products .product .btn{
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-between;
+}
+.container .right-section .products .product .btn a button{
+
+    width: 130px;
+    height: 40px;
+    background-color: #38d39f;
+    color: white;
+    font-weight: bold;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    
+    
+}
+.container .right-section .products .product .btn a:nth-child(2) button
+{
+    background-color: rgb(104, 203, 216);
+}

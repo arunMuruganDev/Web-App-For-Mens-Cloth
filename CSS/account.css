@@ -1,0 +1,209 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family: 'Poppins', sans-serif;
+    outline:none;
+}
+:root{
+	--bg-color: #ffffff;
+	--text-color: #111111;
+	--main-color: #38d39f;
+	--big-font: 4.5rem;
+	--h2-font: 3.3rem;
+	--h3-font: 2rem;
+	--normal-font: 1rem;
+}
+body{
+    height: 100vh;
+    width: 100%;
+
+}
+.container{
+    width: 100%;
+    height: 100%;
+}
+.container nav{
+    width: 100%;
+    height: 10%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color:#e649c9 ;
+    position: sticky;
+    top: 0;
+    z-index: 9999;
+}
+.container nav h1{
+    position: fixed;
+    left: 30px;
+    font-size: 28px;
+    font-weight: 700;
+    letter-spacing: 1px;
+    color:white;
+}
+.container nav a{
+    position: absolute;
+    right: 20px;
+    font-size: 30px;
+    color: var(--main-color);
+    margin-right: 20px;
+}
+.container nav form input[type="submit"]{
+    width: 100px;
+    height: 30px;
+    margin-left: 30px;
+    border:none;
+    background-color: var(--main-color);
+    color: white;
+    cursor: pointer;
+}
+.container nav form select{
+
+    width: 200px;
+    height: 30px;
+    border: none;
+    border-bottom: 2px solid rgb(104, 203, 216);
+ 
+ }
+ /* left-section */
+
+ .container .main
+ {
+    width: 100%;
+    height: 90%;
+
+ }
+ .container .main .left-section
+ {
+    height: 100%;
+    width: 20%;
+    background:linear-gradient(to right,rgb(240, 139, 188),rgb(231, 143, 234));
+    color: white;
+    position: fixed;
+    top: 40px;
+ }
+ .container .main .left-section ul{
+    width:100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    list-style: none;
+    justify-content: space-around;
+}
+.container .main .left-section ul li{
+    width: 100%;
+    margin-left: 40px;
+    padding: 15px;
+    border-radius: 30px;
+    cursor: pointer;
+
+}
+.container .main .left-section ul li i{
+    margin-right:20px;
+}
+
+.container .main .left-section .active{
+    background-color: white;
+    color: #e649c9 !important;
+}
+/* Right Section */
+.container .main .right-section .cancelled,.delivered,.messages,.settings{
+    display: none;
+}
+.container .main .right-section
+{
+    width: 80%;
+    height: 100%;
+    margin-left: 20%;
+}
+
+.table-content{
+    width: 100%;
+    padding: 30px;
+}
+.table-content table,th,td
+{
+    border: 1px solid #ddd;
+    border-collapse: collapse;
+}
+.table-content table{
+    width: 100%;
+}
+.table-content table th,td{
+    
+    min-width: 50px;
+    padding: 10px;
+} 
+.table-content table th{
+    background-color: #bc80ee;
+    color: white;
+}
+.table-content table td a button
+{
+    width: 100px;
+    height: 30px;
+    background-color: tomato;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.table-content table td a button:hover
+{
+  transform: scale(1.1);
+}
+.table-content table tr:nth-child(even)
+{
+    background-color: #f2f2f2;
+}
+.container .main .settings{
+    margin: 30px;
+    padding: 30px;
+    height: 300px;
+    width: 500px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+    border-radius: 10px;
+
+}
+.container .main .settings h1{
+    text-align: center;
+    letter-spacing: 1px;
+    margin: 20px;
+}
+.container .main .settings form input
+{
+    margin: 10px;
+}
+.container .main .settings form {
+    text-align: center;
+
+}
+.container .main .settings form input[type="time"]
+{
+    width: 100px;
+    height: 40px;
+    border: none;
+    border:1px solid #38d39f;
+    border-radius: 5px;
+}
+.container .main .settings form button{
+   
+    width: 120px;
+    height: 40px;
+    border: none;
+    border-radius: 5px;
+    background-color: #e649c9;
+    color: white;
+    letter-spacing: 1px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.container .main .settings form button:hover{
+    transform: scale(1.1);
+}
+   
